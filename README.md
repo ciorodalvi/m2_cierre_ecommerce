@@ -4,5 +4,8 @@ El proyecto consiste en...
 
 ## Principales secciones de la pagina
 
-- Cuenta con una barra de navegacion.
-- Cuenta con una galeria de productos.
+<ul>
+<li>Cuenta con una barra de navegacion.</li>
+<li>Cuenta con una galeria de productos.</li>
+</ul>
+<p style="color:blue;">Ejemplo uso de etiquetas html con estilos</p>
