@@ -4,5 +4,5 @@ El proyecto consiste en...
 
 ## Principales secciones de la pagina
 
--Cuenta con una barra de navegacion.
--Cuenta con una galeria de productos.
+- Cuenta con una barra de navegacion.
+- Cuenta con una galeria de productos.
