@@ -1,0 +1,128 @@
+#navbar {
+    background-color: #f8dfb9;
+}
+
+.logo {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+}
+
+.hero {
+    background-image: url("../img/merengue.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+body {
+    background-color: #f8f5f1;
+    color: #4b3f33;
+}
+
+/* INICIO TITULOS */
+
+h1 {
+  color: #d9b99b;
+}
+
+h2 {
+  color: #c8ad7e;
+}
+
+h5 {
+  color: #8b6b57;
+}
+
+/* FIN TITULOS */
+
+/* INICIO IMAGENES TARJETAS */
+
+.product-img {
+    object-fit: cover;
+    object-position: center; 
+    height: 200px;
+}
+
+.object-top {
+    object-position: 50% 20%;
+}
+
+.object-bottom {
+    object-position: 50% 80%;
+}
+
+/* FIN IMAGENES TARJETAS */
+
+/* INICIO BOTONES */
+
+.btn,
+#liveAlertBtn {
+  background-color: #c1a489; 
+  border: none;
+  color: #fff;
+}
+
+.btn:hover,
+#liveAlertBtn:hover {
+  background-color: #d9b99b; 
+  color: #fff;
+}
+
+#botonVolver {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0.3;
+  cursor: pointer;
+  display: none; /* Oculto al inicio */
+  transition: opacity 0.3s ease;
+}
+
+#botonVolver:hover {
+  opacity: 1;
+}
+
+/* FIN BOTONES */
+
+.alert {
+    background-color: #f8dfb9;
+    color: #5a3e36;
+    border: 1px solid #e2c7a3;
+}
+
+footer {
+        margin-top: 20px;
+        font-size: 0.9em;
+        color: #7b6054; 
+        text-align: center;
+} 
+
+/* .torta { 
+    display: block; 
+    margin: 20px auto; 
+    width: 400px; 
+    height: auto; 
+    max-height: 300px; 
+    object-fit: contain; 
+} 
+ 
+
+ ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 8px auto;
+    padding: 10px;
+    max-width: 300px;
+    border-radius: 8px;
+}
+ */
