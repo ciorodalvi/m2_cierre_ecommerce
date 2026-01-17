@@ -42,11 +42,12 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto text-center">
-                    <li class="nav-item"> <a class="nav-link active" aria-current="page" href="index.html">Inicio</a> </li>
-                    <li class="nav-item"> <a class="nav-link" href="#seccion-productos">Productos</a> </li>
+                    <li class="nav-item"> <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link" href="productos.html">Productos</a> </li>
                     <li class="nav-item"> <a class="nav-link" href="contacto.html">Contacto</a> </li>
                     <li class="nav-item"> <a class="nav-link bi bi-cart3" href="carrito.html"></a> </li>
-                    
+
                 </ul>
             </div>
         </div>
@@ -64,7 +65,7 @@
                 <p class="lead mb-4">Pasteles, tortas y postres elaborados con ingredientes naturales y un toque de
                     cariño</p>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                    <button type="button" class="btn btn-m">Ver productos</button>
+                    <a href="productos.html" class="btn btn-m mt-auto">Ver productos</a>
                 </div>
             </div>
         </section>
@@ -73,113 +74,93 @@
 
         <!-- INICIO PRODUCTOS DESTACADOS -->
 
-        <section class="container my-5">
+        <section class="container my-5">  
             <h2 class="text-center mb-4">Productos Destacados</h2>
-          <div class="owl-carousel owl-theme">
+            <div class="owl-carousel owl-theme">
 
-    <!-- Torta Brownie -->
-    <div class="item">
-        <div class="card h-100 d-flex flex-column">
-            <img src="./assets/img/torta_brownie.jpg" class="card-img-top product-img" alt="Torta Brownie">
-            <div class="card-body d-flex flex-column text-center">
-                <h5 class="card-title">Torta Brownie</h5>
-                <a href="producto-detalle.html" class="btn btn-m mt-auto">Ver producto</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Torta Amor -->
-    <div class="item">
-        <div class="card h-100 d-flex flex-column">
-            <img src="./assets/img/torta_amor.jpg" class="card-img-top product-img" alt="Torta Amor">
-            <div class="card-body d-flex flex-column text-center">
-                <h5 class="card-title">Torta Amor</h5>
-                <a href="producto-detalle.html" class="btn btn-m mt-auto">Ver producto</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Torta Buttercream -->
-    <div class="item">
-        <div class="card h-100 d-flex flex-column">
-            <img src="./assets/img/torta_buttercream.jpg" class="card-img-top product-img" alt="Torta Buttercream">
-            <div class="card-body d-flex flex-column text-center">
-                <h5 class="card-title">Torta Buttercream</h5>
-                <a href="producto-detalle.html" class="btn btn-m mt-auto">Ver producto</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Torta Rogel -->
-    <div class="item">
-        <div class="card h-100 d-flex flex-column">
-            <img src="./assets/img/torta_rogel.jpg" class="card-img-top product-img" alt="Torta Rogel">
-            <div class="card-body d-flex flex-column text-center">
-                <h5 class="card-title">Torta Rogel</h5>
-                <a href="producto-detalle.html" class="btn btn-m mt-auto">Ver producto</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Alfajores Místico -->
-    <div class="item">
-        <div class="card h-100 d-flex flex-column">
-            <img src="./assets/img/alfajores_mistico.jpg"
-                 class="card-img-top product-img object-top"
-                 alt="Alfajores Místico">
-            <div class="card-body d-flex flex-column text-center">
-                <h5 class="card-title">Alfajores "Místico"</h5>
-                <a href="producto-detalle.html" class="btn btn-m mt-auto">Ver producto</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Volcanes de Dulce de Leche -->
-    <div class="item">
-        <div class="card h-100 d-flex flex-column">
-            <img src="./assets/img/volcanes.jpg"
-                 class="card-img-top product-img object-bottom"
-                 alt="Volcanes de Dulce de Leche">
-            <div class="card-body d-flex flex-column text-center">
-                <h5 class="card-title">Volcanes de Dulce de Leche</h5>
-                <a href="producto-detalle.html" class="btn btn-m mt-auto">Ver producto</a>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-        <!-- FIN PRODUCTOS DESTACADOS -->
-
-
-        <!-- INICIO CUADRO DE TEXTO Y ALERTA -->
-
-        <section id="seccion-contacto" class="py-3 container">
-            <h2 class="text-center py-2">Ponte en contacto con nosotros</h2>
-            <div class="row justify-content-center">
-                <form action="" method="get" class="col-12 col-md-8 col-lg-6">
-                    <div class="mb-3"> <label for="fnombre" class="form-label">Ingresa tu nombre</label> <input
-                            type="text" id="fnombre" name="fnombre" class="form-control" required> </div>
-                    <div class="mb-3"> <label for="femail" class="form-label">Ingresa tu e-mail</label> <input
-                            type="text" id="femail" name="femail" class="form-control" required> </div>
-                    <div class="mb-3"> <label for="fcomentario" class="form-label">Comenta sobre lo que
-                            necesitas</label> <textarea type="text" id="fcomentario" name="fcomentario"
-                            class="form-control" rows="5" required></textarea> </div>
-                    <div> <button type="submit" class="btn btn-primary" id="liveAlertBtn">Enviar</button>
+                <!-- Torta Brownie -->
+                <div class="item">
+                    <div class="card h-100 d-flex flex-column">
+                        <img src="./assets/img/torta_brownie.jpg" class="card-img-top product-img" alt="Torta Brownie">
+                        <div class="card-body d-flex flex-column text-center">
+                            <h5 class="card-title">Torta Brownie</h5>
+                            <a href="producto-detalle.html" class="btn btn-m mt-auto">Ver producto</a>
+                        </div>
                     </div>
-                    <div id="liveAlertPlaceholder" class="mt-5"></div>
-                </form>
+                </div>
+
+                <!-- Torta Amor -->
+                <div class="item">
+                    <div class="card h-100 d-flex flex-column">
+                        <img src="./assets/img/torta_amor.jpg" class="card-img-top product-img" alt="Torta Amor">
+                        <div class="card-body d-flex flex-column text-center">
+                            <h5 class="card-title">Torta Amor</h5>
+                            <a href="producto-detalle.html" class="btn btn-m mt-auto">Ver producto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Torta Buttercream -->
+                <div class="item">
+                    <div class="card h-100 d-flex flex-column">
+                        <img src="./assets/img/torta_buttercream.jpg" class="card-img-top product-img"
+                            alt="Torta Buttercream">
+                        <div class="card-body d-flex flex-column text-center">
+                            <h5 class="card-title">Torta Buttercream</h5>
+                            <a href="producto-detalle.html" class="btn btn-m mt-auto">Ver producto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Torta Rogel -->
+                <div class="item">
+                    <div class="card h-100 d-flex flex-column">
+                        <img src="./assets/img/torta_rogel.jpg" class="card-img-top product-img" alt="Torta Rogel">
+                        <div class="card-body d-flex flex-column text-center">
+                            <h5 class="card-title">Torta Rogel</h5>
+                            <a href="producto-detalle.html" class="btn btn-m mt-auto">Ver producto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alfajores Místico -->
+                <div class="item">
+                    <div class="card h-100 d-flex flex-column">
+                        <img src="./assets/img/alfajores_mistico.jpg" class="card-img-top product-img object-top"
+                            alt="Alfajores Místico">
+                        <div class="card-body d-flex flex-column text-center">
+                            <h5 class="card-title">Alfajores "Místico"</h5>
+                            <a href="producto-detalle.html" class="btn btn-m mt-auto">Ver producto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Volcanes de Dulce de Leche -->
+                <div class="item">
+                    <div class="card h-100 d-flex flex-column">
+                        <img src="./assets/img/volcanes.jpg" class="card-img-top product-img object-bottom"
+                            alt="Volcanes de Dulce de Leche">
+                        <div class="card-body d-flex flex-column text-center">
+                            <h5 class="card-title">Volcanes de Dulce de Leche</h5>
+                            <a href="producto-detalle.html" class="btn btn-m mt-auto">Ver producto</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-        </section>
-    </main>
+
+            <!-- FIN PRODUCTOS DESTACADOS -->
+
+
+    <!-- INICIO BOTON VOLVER -->
 
     <div id="botonVolver">
         <i class="bi bi-arrow-up-circle-fill fs-1"></i>
     </div>
 
+    <!-- FIN BOTON VOLVER -->
 
 
-    <!-- FIN CUADRO DE TEXTO Y ALERTA -->
 
     <footer>
         <p>© 2025 Almendra Pastelería</p>

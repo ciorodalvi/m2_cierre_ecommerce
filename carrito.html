@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almendra - Carrito</title>
+
+    <!-- BOOTSTRAP CSS - ESTILOS DE COMPONENTES -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- BOOTSTRAP ICONOS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- BOOTSTRAP JS - LOGICA DE ELEMENTOS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <!-- JQUERY -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script defer src="./assets/js/script.js"></script>
+    <script defer src="./assets/js/logica_carrito.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- INICIO BARRA DE NAVEGACION -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./assets/img/logo_almendra.png" alt="Logo Almendra" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item"> <a class="nav-link" href="index.html">Inicio</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="productos.html">Productos</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="contacto.html">Contacto</a> </li>
+                    <li class="nav-item"> <a class="nav-link bi bi-cart3 active" aria-current="page"
+                            href="carrito.html"></a> </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-3 container page-offset">
+        <h1 class="text-center encabezado-carrito">Detalles de tu carrito</h1>
+    </header>
+
+    <main class="container">
+        <section class="detalle-carrito overflow-x-auto">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Imagen</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Torta Brownie</td>
+                        <td>
+                            <div class="product-img-square-thumbnail">
+                                <img src="./assets/img/torta_brownie.jpg" alt="Torta Brownie" class="img-fluid">
+                        </td>
+                        <td>$30.000</td>
+                        <td>
+                            <input type="number" min="1" max="10">
+                        </td>
+                        <td>
+                            <button class="btn bi bi-trash3 btn-eliminar">Eliminar</button>
+                        </td>
+                    </tr>
+
+                    </tr>
+                </tbody>
+            </table>
+            <div class="d-flex justify-content-end py-2">
+                <button class="btn">Ir a pagar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-5">
+        <p>© 2025 Almendra Pastelería</p>
+    </footer>
+
+</body>
+
+</html>

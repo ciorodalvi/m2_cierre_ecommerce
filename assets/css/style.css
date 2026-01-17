@@ -42,7 +42,7 @@ h5 {
 
 /* FIN TITULOS */
 
-/* INICIO IMAGENES TARJETAS */
+/* INICIO IMAGENES TARJETAS CARRUSEL */
 
 .product-img {
     height: 200px;
@@ -58,19 +58,56 @@ h5 {
     object-position: 50% 80%;
 }
 
-/* FIN IMAGENES TARJETAS */
+/* FIN IMAGENES TARJETAS CARRUSEL */
+
+/* INICIO IMAGENES DETALLE PRODUCTOS */
+
+#seccion-productos .card img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.product-img-square {
+    width: 100%;
+    max-width: 400px;  
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.product-img-square img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      
+    display: block;
+}
+
+.product-img-square-thumbnail {
+    width: 50%;
+    max-width: 80px;  
+    aspect-ratio: 1 / 1;
+}
+
+.product-img-square-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      
+    display: block;
+}
+
+/* INICIO IMAGENES DETALLE PRODUCTOS */
 
 /* INICIO BOTONES */
 
 .btn,
-#liveAlertBtn {
+#liveAlertBtn, .btnAgregar {
   background-color: #c1a489; 
   border: none;
   color: #fff;
 }
 
 .btn:hover,
-#liveAlertBtn:hover {
+#liveAlertBtn:hover, .btnAgregar:hover {
   background-color: #d9b99b; 
   color: #fff;
 }
@@ -91,6 +128,11 @@ h5 {
 
 /* FIN BOTONES */
 
+#seccion-contacto, .encabezado-detalle, .encabezado-carrito {
+    margin-top: 100px;
+}
+
+
 .alert {
     background-color: #f8dfb9;
     color: #5a3e36;
@@ -104,25 +146,3 @@ footer {
         text-align: center;
 } 
 
-/* .torta { 
-    display: block; 
-    margin: 20px auto; 
-    width: 400px; 
-    height: auto; 
-    max-height: 300px; 
-    object-fit: contain; 
-} 
- 
-
- ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    margin: 8px auto;
-    padding: 10px;
-    max-width: 300px;
-    border-radius: 8px;
-}
- */

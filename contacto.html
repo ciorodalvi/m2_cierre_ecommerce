@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Almendra</title>
+    <title>Almendra - Carrito</title>
 
     <!-- BOOTSTRAP CSS - ESTILOS DE COMPONENTES -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -17,7 +17,7 @@
         crossorigin="anonymous"></script>
 
     <script defer src="./assets/js/script.js"></script>
-     <script defer src="./assets/js/logica_alert.js"></script>
+    <script defer src="./assets/js/logica_alert.js"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
@@ -37,9 +37,8 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto text-center">
                     <li class="nav-item"> <a class="nav-link" href="index.html">Inicio</a> </li>
-                    <li class="nav-item"> <a class="nav-link active" aria-current="page"
-                            href="#seccion-productos">Productos</a> </li>
-                    <li class="nav-item"> <a class="nav-link" href="contacto.html">Contacto</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="productos.html">Productos</a> </li>
+                    <li class="nav-item"> <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a> </li>
                     <li class="nav-item"> <a class="nav-link bi bi-cart3" href="carrito.html"></a> </li>
 
                 </ul>
@@ -47,35 +46,31 @@
         </div>
     </nav>
 
-    <header class="py-3 page-offset">
-        <h1 class="text-center py-3 encabezado-detalle">Torta Brownie</h1>
-    </header>
+               <!-- INICIO CUADRO DE TEXTO Y ALERTA -->
 
-    <main class="container">
-        <section class="">
-            <div class="row row-cols-1 row-cols-md-2 gy-4">
-                <div class="col encabezado-detalle-imagen">
-                    <div class="product-img-square">
-                        <img src="./assets/img/torta_brownie.jpg" alt="Torta Brownie" class="img-fluid">
-                    </div>
+            <section id="seccion-contacto" class="py-3 container page-offset">
+                <h2 class="text-center py-2">Ponte en contacto con nosotros</h2>
+                <div class="row justify-content-center">
+                    <form action="" method="get" class="col-12 col-md-8 col-lg-6">
+                        <div class="mb-3"> <label for="fnombre" class="form-label">Ingresa tu nombre</label> <input
+                                type="text" id="fnombre" name="fnombre" class="form-control" required> </div>
+                        <div class="mb-3"> <label for="femail" class="form-label">Ingresa tu e-mail</label> <input
+                                type="text" id="femail" name="femail" class="form-control" required> </div>
+                        <div class="mb-3"> <label for="fcomentario" class="form-label">Comenta sobre lo que
+                                necesitas</label> <textarea type="text" id="fcomentario" name="fcomentario"
+                                class="form-control" rows="5" required></textarea> </div>
+                        <div> <button type="submit" class="btn btn-primary" id="liveAlertBtn">Enviar</button>
+                        </div>
+                        <div id="liveAlertPlaceholder" class="mt-5"></div>
+                    </form>
                 </div>
-
-
-                
-                <div class="col encabezado-detalle-info px-5 px-md-0">
-                    <p class="fs-4"> Brownie jugoso cubierto con dulce de leche y merengue italiano. Dulce y
-                        tentadora en cada bocado.</p>
-                    <p class="fs-5">Precio: <span class="fw-bold">$30.000</span></p>
-                    <div class="py-3">
-                         <button type="button" class="btn btn-m mt-auto" id="liveAlertBtnAgregar">Agregar</button>
-                    </div>
-                    <div id="liveAlertPlaceholder" class="mt-5"></div>
-                </div>
-            </div>
-        </section>
+            </section>
     </main>
 
-    <footer class="py-5">
+    <!-- FIN CUADRO DE TEXTO Y ALERTA -->
+
+
+    <footer>
         <p>© 2025 Almendra Pastelería</p>
     </footer>
 
